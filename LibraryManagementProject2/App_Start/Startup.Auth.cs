@@ -47,39 +47,7 @@ namespace LibraryManagementProject2
             // This is similar to the RememberMe option when you log in.
             app.UseTwoFactorRememberBrowserCookie(DefaultAuthenticationTypes.TwoFactorRememberBrowserCookie);
 
-            // Uncomment the following lines to enable logging in with third party login providers
-            //app.UseMicrosoftAccountAuthentication(
-            //    clientId: "",
-            //    clientSecret: "");
-
-            //app.UseTwitterAuthentication(
-            //   consumerKey: "",
-            //   consumerSecret: "");
-
-            //var facebookOptions = new FacebookAuthenticationOptions()
-            //{
-            //    AppId = "1139025256271388",
-            //    AppSecret = "9bb6670361712d00c49412a067cfb740",
-            //    BackchannelHttpHandler = new FaceBookBackChannelHandler(),
-            //    UserInformationEndpoint = "https://graph.facebook.com/v2.4/me?fields=id,email"
-            //};
-            //facebookOptions.Scope.Add("email");
-            //app.UseFacebookAuthentication(facebookOptions);
-
-            //app.UseFacebookAuthentication(
-            //   appId: "1139025256271388",
-            //   appSecret: "9bb6670361712d00c49412a067cfb740"
-            //   ); //Remaining
-
-
-
-
-
-            app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
-            {
-                ClientId = "207188986091-jadpa7vbkgqml6uhnnf04m4ib66qjeef.apps.googleusercontent.com",
-                ClientSecret = "-cPBunMR1sh3Wi2BQl39nTM7"
-            });
+     
         }
     }
 }
